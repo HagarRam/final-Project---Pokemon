@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="styles.css" />
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+		</style>
+		<title>PokemonWeb</title>
+	</head>
+	<body>
+		<header id="header">
+			<div id="navbar"></div>
+			<div id="button">
+				<button id="home" type='click'>home</button>
+				<button id="favorites" type='click'>favorites</button>
+				<button id="favorites"type='click'></button>
+			</div>
+			</div>
+		</header>
+		<img
+			src="/logoImage.png"
+			id="logo" />
+		<div class="searchText">
+			<input
+				type="text"
+				id="text-input" />
+			<button
+				type='click'
+				id="searchBotton">
+				search
+			</button>
+		</div>
+		<div id="allThePokeman"></div>
+		<!-- The Modal -->
+       <div id="myModal" class="modal">
+         <div class="modal-windo">	
+           <span id="close-modal" class="close">&times; </span>
+           <div id="pokemon-container"></div>
+          </div>
+        </div>
+		<button
+			id="loadMore"
+			type="submit">
+			Load more...
+		</button>
+		<script
+			type="module"
+			src="/mains.js"></script>
+	</body>
+</html>

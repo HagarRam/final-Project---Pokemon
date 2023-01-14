@@ -1,0 +1,429 @@
+/* for desktop mode */
+body {
+	width: 1342px;
+	height: 1283px;
+}
+#header {
+	display: flex;
+	width: 90%;
+	height: 10px;
+	background: #020166;
+	padding-left: 0px;
+	justify-content: space-between;
+}
+#navbar {
+	width: 100%;
+	height: 100px;
+	background: #020166;
+	padding-left: 5px;
+}
+#button {
+	display: flex;
+	flex-direction: row;
+}
+#home {
+	width: 120px;
+	height: 100px;
+	background: #94d97e;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	color: #000000;
+}
+#favorites {
+	width: 120px;
+	height: 100px;
+	background: #020166;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	color: white;
+}
+#logo {
+	width: 170px;
+	height: 70px;
+	/* background: url(logoImage.png); */
+	margin-left: 5%;
+	margin-top: 0.5%;
+	margin-bottom: 3%;
+}
+#text-input {
+	margin-left: 37%;
+	width: 341px;
+	height: 36px;
+	margin-bottom: 3%;
+	background: #f7f7f9;
+	border: 1px solid rgba(2, 1, 102, 0.5);
+	border-radius: 9px;
+}
+#searchBotton {
+	background: #373299;
+	border-radius: 9px;
+	color: #f7f7f9;
+	width: 87px;
+	height: 36px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	font-family: 'Roboto';
+	cursor: pointer;
+}
+
+#allThePokeman {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin-left: 6%;
+	margin-right: 10%;
+	filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.15));
+	font-family: 'Roboto';
+	margin-top: 2%;
+}
+.pokemon {
+	background-color: #e5e5e5;
+	width: 20%;
+	height: 250px;
+	border-radius: 9px;
+	margin-right: 13.9px;
+	margin-bottom: 2%;
+}
+.pkemonImage {
+	margin-left: 18%;
+	margin-top: 2%;
+	width: 164.02px;
+	height: 161px;
+	cursor: pointer;
+	/* background: url(img.png); לחזור להבין איך אפשר לעשות את זה נוצת עם רקע*/
+}
+.plemonName {
+	font-weight: 600;
+	font-size: 20px;
+	color: #373299;
+	width: 114.81px;
+	height: 31px;
+	text-align: center;
+	margin-left: 30%;
+	margin-top: 5%;
+	font-family: 'Roboto';
+}
+.pokemonID {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 26px;
+	color: #373299;
+	width: 54px;
+	height: 18px;
+	margin-left: 5%;
+	margin-top: 2%;
+	font-family: 'Roboto';
+}
+
+#loadMore {
+	width: 210px;
+	height: 36px;
+	margin-left: 43%;
+	border: 1px solid #373299;
+	border-radius: 9px;
+	font-size: 18px;
+	font-family: 'Roboto';
+	line-height: 21px;
+	font-weight: 600;
+	color: #373299;
+	margin-bottom: 15%;
+	margin-top: 3%;
+	cursor: pointer;
+}
+/* Modal Content */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(5, 5, 5, 0.4);
+}
+
+.modal-windo {
+	background-color: #bebee2;
+	margin-left: 16%;
+	margin-top: 15%;
+	padding: 20px;
+	filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.15));
+	background: #f7f7f9;
+	border-radius: 40px;
+	border: 1px solid #888;
+	width: 54%;
+	height: 468px;
+}
+
+/* The Close Button in modal */
+.close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.pkemonImageModal {
+	margin-left: 5%;
+	width: 220.02px;
+	height: 200px;
+
+	margin-top: 4%;
+}
+
+.pokemonIDModal {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 26px;
+	color: #373299;
+	width: 54px;
+	height: 18px;
+	margin-left: 2%;
+	margin-top: 1%;
+	font-family: 'Roboto';
+}
+.plemonNameModal {
+	line-height: 38px;
+	color: #373299;
+	width: 114.81px;
+	height: 31px;
+	text-align: center;
+	margin-left: 9%;
+	margin-top: 2%;
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 28px;
+}
+.boxDetails {
+	margin-left: 40%;
+}
+
+.line {
+	width: 321px;
+	margin-top: -21%;
+	margin-left: 15%;
+	border: 1px solid #d7d7d7;
+	transform: rotate(-90deg);
+}
+
+.poke {
+	display: flex;
+	margin-left: 6%;
+	margin-top: 3%;
+	margin-right: 2%;
+}
+.descriptionBox div {
+	margin-top: -70%;
+	font-family: 'roboto';
+	color: #373299;
+	font-size: 136%;
+	font-weight: 600;
+}
+.descriptionText {
+	font-family: 'roboto';
+	color: #373299;
+	font-size: 96%;
+	font-weight: 500;
+}
+.stats {
+	font-family: 'roboto';
+	color: #373299;
+	font-size: 136%;
+	margin-top: 7%;
+	font-weight: 600;
+}
+.allTheBoxes {
+	display: flex;
+	flex-wrap: wrap;
+	/* justify-content: space-between; */
+	margin-right: 40%;
+}
+.statBox {
+	font-size: 68%;
+	display: flex;
+	margin-right: 6%;
+	font-weight: 600;
+	/* flex-direction: column; */
+}
+.statTitle {
+	margin-right: 5%;
+}
+.statValue {
+	margin-left: 5px;
+}
+.fatherEgg div {
+	background-color: #a8a77a;
+
+	/* margin-right: 2%;
+	padding: 1%;
+	padding-left: 2%;
+	padding-right: 2%; */
+	left: 20%;
+	padding-top: 12%;
+	width: 100px;
+	height: 38px;
+	text-align: center;
+	border-radius: 16px;
+	font-family: 'roboto';
+	color: white;
+}
+#Fire {
+	background-color: #ee8130;
+}
+#Water {
+	background-color: #6390f0;
+}
+#Electric {
+	background-color: #f7d02c;
+}
+#Grass {
+	background-color: #7ac74c;
+}
+#Ice {
+	background-color: #96d9d6;
+}
+#Fighting {
+	background-color: #c22e28;
+}
+#Poison {
+	background-color: #a33ea1;
+}
+#Ground {
+	background-color: #e2bf65;
+}
+#Flying {
+	background-color: #a98ff3;
+}
+#Psychic {
+	background-color: #f95587;
+}
+#Bug {
+	background-color: #a6b914;
+}
+#Rock {
+	background-color: #a8b6a136;
+}
+#Ghost {
+	background-color: #735797;
+}
+#Dragon {
+	background-color: #6f35fc;
+}
+#Dark {
+	background-color: #705746;
+}
+#Steel {
+	background-color: #b7b7ce;
+}
+#Fairy {
+	background-color: #d685ad;
+}
+#Monster {
+	background-color: #a8a77a;
+	margin-right: 2%;
+}
+
+/* .Grass {
+	background-color: green;
+} */
+@media (max-width: 500px) {
+	#allThePokeman {
+		flex-direction: column;
+		margin-left: 4%;
+	}
+	#text-input {
+		width: 200px;
+		height: 36px;
+		margin-left: 3%;
+	}
+	#searchBotton {
+		width: 74px;
+		height: 36px;
+	}
+	#logo {
+		width: 300px;
+		height: 110px;
+		margin-left: 6%;
+	}
+	#loadMore {
+		width: 150px;
+		height: 36px;
+		margin-left: 11%;
+	}
+	#header {
+		display: none;
+	}
+	#navbar {
+		display: none;
+	}
+	#button {
+		display: none;
+	}
+	#home {
+		display: none;
+	}
+	#favorites {
+		display: none;
+	}
+	#logo {
+		/* background: url(logoImage.png); */
+		margin-left: 3%;
+	}
+	.modal-windo {
+		margin-left: 2%;
+		width: 20%;
+		height: 1000px;
+	}
+	.boxDetails {
+		margin-top: 78%;
+		margin-left: 11%;
+	}
+	.line {
+		margin-top: -190%;
+		margin-left: 0%;
+		transform: rotate(-180deg);
+	}
+	.pkemonImageModal {
+		margin-left: 12%;
+		margin-top: 10%;
+		width: 80%;
+		height: 50%;
+	}
+	.plemonNameModal {
+		margin-top: 25px;
+		margin-left: 70px;
+	}
+
+	.poke {
+		margin-left: 10%;
+	}
+	.descriptionBox {
+		text-align: center;
+		margin-left: -16%;
+		padding-top: 36px;
+	}
+	.stats {
+		text-align: center;
+		margin-left: -10%;
+		margin-top: -42px;
+	}
+	.allTheBoxes {
+		margin-left: 38%;
+	}
+}
