@@ -97,7 +97,6 @@ body {
 	width: 164.02px;
 	height: 161px;
 	cursor: pointer;
-	/* background: url(img.png); לחזור להבין איך אפשר לעשות את זה נוצת עם רקע*/
 }
 .plemonName {
 	font-weight: 600;
@@ -160,7 +159,7 @@ body {
 	background: #f7f7f9;
 	border-radius: 40px;
 	border: 1px solid #888;
-	width: 54%;
+	width: 46%;
 	height: 468px;
 }
 
@@ -251,15 +250,13 @@ body {
 .allTheBoxes {
 	display: flex;
 	flex-wrap: wrap;
-	/* justify-content: space-between; */
+
 	margin-right: 40%;
 }
 .statBox {
 	font-size: 68%;
 	display: flex;
 	margin-right: 6%;
-	font-weight: 600;
-	/* flex-direction: column; */
 }
 .statTitle {
 	margin-right: 5%;
@@ -269,11 +266,6 @@ body {
 }
 .fatherEgg div {
 	background-color: #a8a77a;
-
-	/* margin-right: 2%;
-	padding: 1%;
-	padding-left: 2%;
-	padding-right: 2%; */
 	left: 20%;
 	padding-top: 12%;
 	width: 100px;
@@ -339,9 +331,6 @@ body {
 	margin-right: 2%;
 }
 
-/* .Grass {
-	background-color: green;
-} */
 @media (max-width: 500px) {
 	#allThePokeman {
 		flex-direction: column;
@@ -382,7 +371,6 @@ body {
 		display: none;
 	}
 	#logo {
-		/* background: url(logoImage.png); */
 		margin-left: 3%;
 	}
 	.modal-windo {

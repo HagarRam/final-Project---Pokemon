@@ -65,8 +65,6 @@ function createPokemon(pokemonIndex) {
 function listPokemon(x) {
 	for (let i = x; i < x + 12; i++) {
 		let pokemon = createPokemon(i);
-
-		//in to the fucking father- appenChild//
 		allThepokemon.appendChild(pokemon);
 	}
 }
