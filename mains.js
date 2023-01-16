@@ -51,14 +51,14 @@ function createPokemonID(pokemonIndex, creatorType) {
 
 function createPokemon(pokemonIndex) {
 	let pokemon = document.createElement('div'); //open div
-
+	let favorite = document.createElement('div');
 	pokemon.addEventListener('click', () => openPokemonModal(pokemonIndex));
 
 	//OpenclassName
 	pokemon.className = 'pokemon';
-
+	favorite.className = false;
 	fillElementWithPokemonData(pokemonIndex, pokemon, '');
-
+	pokemon.appendChild(favorite);
 	return pokemon;
 }
 
@@ -134,13 +134,13 @@ function createDescriptionBox(pokemonIndex) {
 	let descriptionBox = document.createElement('div');
 	let descriptionText = document.createElement('p');
 	let descriptionTitle = document.createElement('div');
-
 	descriptionTitle.innerHTML = 'Description';
 	descriptionText.innerHTML = data[pokemonIndex].description;
 
 	descriptionBox.className = 'descriptionBox';
 	descriptionTitle.className = 'descriptionTitle';
 	descriptionText.className = 'descriptionText';
+
 	descriptionBox.appendChild(descriptionTitle);
 	descriptionBox.appendChild(descriptionText);
 
@@ -151,9 +151,11 @@ function createPokemonDetailsBox(pokemonIndex) {
 	let descriptionBox = createDescriptionBox(pokemonIndex);
 	let statsBox = createStatsBox(pokemonIndex);
 	let pokemonDetailsBox = document.createElement('div');
+	let titleLove = document.createElement('img');
+	titleLove.className = 'titleLove';
 	// pokemonDetailsBox.innerHTML = 'stats';
 	pokemonDetailsBox.className = 'boxDetails';
-
+	pokemonDetailsBox.appendChild(titleLove);
 	pokemonDetailsBox.appendChild(descriptionBox);
 	pokemonDetailsBox.appendChild(statsBox);
 
