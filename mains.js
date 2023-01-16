@@ -77,7 +77,9 @@ const pokemonContainer = document.getElementById('pokemon-container');
 
 function createStatsBox(pokemonIndex) {
 	let statsBox = document.createElement('div');
-	statsBox.innerHTML = 'stats:';
+	let statsLittleBox = document.createElement('div');
+	statsLittleBox.innerHTML = 'stats:';
+	statsLittleBox.className = 'statsLittleBox';
 	statsBox.className = 'stats';
 	let allTheBoxes = document.createElement('div');
 	allTheBoxes.className = 'allTheBoxes';
@@ -95,6 +97,7 @@ function createStatsBox(pokemonIndex) {
 		statBox.appendChild(statTitle);
 		statBox.appendChild(statValue);
 		allTheBoxes.appendChild(statBox);
+		statsBox.appendChild(statsLittleBox);
 		statsBox.appendChild(allTheBoxes);
 	}
 

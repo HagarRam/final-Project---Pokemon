@@ -245,9 +245,7 @@ body {
 .stats {
 	font-family: 'roboto';
 	color: #373299;
-	font-size: 108%;
-	font-weight: 600;
-	margin-top: 70px;
+	margin-top: 36px;
 }
 .allTheBoxes {
 	display: grid;
@@ -255,16 +253,18 @@ body {
 	grid-template-columns: repeat(3, 163px);
 }
 .statBox {
-	font-size: 68%;
+	font-size: 96%;
 	display: flex;
 	margin-right: 6%;
+}
+.statsLittleBox {
+	font-size: 136%;
+	font-weight: 600;
 }
 .statTitle {
 	margin-right: 5%;
 }
-.statValue {
-	/* margin-left: 5px; */
-}
+
 .allTheBoxes div {
 	display: -webkit-inline-box;
 }
