@@ -89,7 +89,7 @@ function createStatsBox(pokemonIndex) {
 		statTitle.className = 'statTitle';
 		statValue.className = 'statValue';
 
-		statBox.className = `statBox`;
+		statBox.className = `statsBox`;
 		statTitle.innerHTML = `${stat}:`;
 		statValue.innerHTML = data[pokemonIndex].base[stat];
 		statBox.appendChild(statTitle);
